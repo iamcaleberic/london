@@ -1,0 +1,23 @@
+= form_for(@attraction) do |f|
+  - if @attraction.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@attraction.errors.count, "error")
+        prohibited this attraction from being saved:
+      %ul
+        - @attraction.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = f.label :name
+    %br/
+    = f.text_field :name
+  .field
+    = f.label :title
+    %br/
+    = f.text_field :title
+  .field
+    = f.label :location
+    %br/
+    = f.text_field :location
+  .actions
+    = f.submit

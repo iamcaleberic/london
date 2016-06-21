@@ -1,0 +1,7 @@
+= render 'layouts/header'
+- if signed_in?
+  = link_to "Sign out" , destroy_tourist_session_path , :method => :delete
+- else
+  = link_to "Sign in" , new_tourist_session_path
+%h1 Home#index
+%p Find me in app/views/home/index.html.erb
