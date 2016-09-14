@@ -2,7 +2,7 @@
  > * Make sure you have ```ruby 2.3.1``` , ```Mongo ``` , ```Rails 4.2.6``` , ```Bundler``` on your system
  > * The application uses ```mongo``` as main database
  
- ##### Running 
+ ####### Running 
  
  Run "bundle install" to install Gems or dependencies 
  
